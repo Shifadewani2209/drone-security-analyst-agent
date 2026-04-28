@@ -1,0 +1,78 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#38bdf8" />
+    </marker>
+    <style>
+      .title { font: bold 34px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #475569; }
+      .box { fill: #0f172a; stroke: #38bdf8; stroke-width: 3; rx: 18; }
+      .smallbox { fill: #1e293b; stroke: #38bdf8; stroke-width: 2; rx: 16; }
+      .text { font: bold 18px Arial, sans-serif; fill: #ffffff; text-anchor: middle; }
+      .smalltext { font: 14px Arial, sans-serif; fill: #cbd5e1; text-anchor: middle; }
+      .arrow { stroke: #38bdf8; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="#f8fafc"/>
+
+  <text x="600" y="55" class="title" text-anchor="middle">DroneSec AI — System Architecture</text>
+  <text x="600" y="85" class="subtitle" text-anchor="middle">Drone Security Analyst Agent for telemetry, frame indexing, alerts, search, and summary</text>
+
+  <!-- Input boxes -->
+  <rect x="110" y="130" width="350" height="100" class="box"/>
+  <text x="285" y="170" class="text">Simulated Drone Telemetry</text>
+  <text x="285" y="198" class="smalltext">Time, Location, Altitude</text>
+
+  <rect x="740" y="130" width="350" height="100" class="box"/>
+  <text x="915" y="170" class="text">Simulated Video Frames</text>
+  <text x="915" y="198" class="smalltext">Text-based Frame Descriptions</text>
+
+  <!-- Processing pipeline -->
+  <rect x="425" y="290" width="350" height="90" class="box"/>
+  <text x="600" y="326" class="text">Frame Processing Engine</text>
+  <text x="600" y="354" class="smalltext">Processes each drone frame</text>
+
+  <rect x="425" y="430" width="350" height="90" class="box"/>
+  <text x="600" y="466" class="text">Object &amp; Event Detection</text>
+  <text x="600" y="494" class="smalltext">Person, Vehicle, Smoke, Animal</text>
+
+  <rect x="425" y="570" width="350" height="90" class="box"/>
+  <text x="600" y="606" class="text">Rule-Based Security Agent</text>
+  <text x="600" y="634" class="smalltext">Alert Rules + Recommendations</text>
+
+  <rect x="425" y="710" width="350" height="90" class="box"/>
+  <text x="600" y="746" class="text">SQLite Frame Index</text>
+  <text x="600" y="774" class="smalltext">Stores timestamp, object, location, alerts</text>
+
+  <!-- Dashboard -->
+  <rect x="425" y="830" width="350" height="55" class="box"/>
+  <text x="600" y="865" class="text">Streamlit Dashboard</text>
+
+  <!-- Output boxes -->
+  <rect x="50" y="815" width="230" height="60" class="smallbox"/>
+  <text x="165" y="852" class="text">Security Logs</text>
+
+  <rect x="290" y="815" width="230" height="60" class="smallbox"/>
+  <text x="405" y="852" class="text">Alert Panel</text>
+
+  <rect x="680" y="815" width="230" height="60" class="smallbox"/>
+  <text x="795" y="852" class="text">Search Frames</text>
+
+  <rect x="920" y="815" width="230" height="60" class="smallbox"/>
+  <text x="1035" y="852" class="text">AI Summary</text>
+
+  <!-- Arrows -->
+  <path d="M285 230 C285 260, 450 260, 520 290" class="arrow"/>
+  <path d="M915 230 C915 260, 750 260, 680 290" class="arrow"/>
+
+  <line x1="600" y1="380" x2="600" y2="430" class="arrow"/>
+  <line x1="600" y1="520" x2="600" y2="570" class="arrow"/>
+  <line x1="600" y1="660" x2="600" y2="710" class="arrow"/>
+  <line x1="600" y1="800" x2="600" y2="830" class="arrow"/>
+
+  <path d="M530 855 C430 855, 350 845, 280 845" class="arrow"/>
+  <path d="M560 855 C500 855, 470 845, 520 845" class="arrow"/>
+  <path d="M670 855 C720 855, 740 845, 680 845" class="arrow"/>
+  <path d="M700 855 C820 855, 880 845, 920 845" class="arrow"/>
+</svg>
