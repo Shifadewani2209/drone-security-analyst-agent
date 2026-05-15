@@ -325,6 +325,7 @@ st.markdown(
         .route-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+
     }
     </style>
     """,
@@ -843,6 +844,9 @@ with report_tab:
 
         report_lines = [
             "# DroneSec AI Incident Report",
+            "",
+            "Use case: autonomous docked drone security monitoring for a large property.",
+            "Concept: drone acts as a mobile camera, AI agent classifies risk, dashboard supports response.",
             "",
             f"Frames processed: {len(df)}",
             f"Alerts generated: {len(alert_df)}",
