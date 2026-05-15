@@ -1,3 +1,6 @@
+<img width="1905" height="967" alt="image" src="https://github.com/user-attachments/assets/a5594dc6-ca34-4064-bb97-0782ceff78ca" />
+<img width="1904" height="1084" alt="image" src="https://github.com/user-attachments/assets/5b2e2236-6943-4fb2-9a13-6c05b3564da4" />
+
 # DroneSec AI - Drone Security Analyst Agent
 
 DroneSec AI is a prototype AI-powered security analyst for an autonomous docked drone monitoring a fixed property.
